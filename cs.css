@@ -18,7 +18,7 @@ EDIT ON
 
 h1 {
   font-size: 4.2rem;
-  animation: flicker 1.5s infinite alternate;     
+  animation: flicker 1.6s infinite alternate;     
 }
 
 /* Flickering animation */
@@ -29,7 +29,7 @@ h1 {
       text-shadow:
       0 0 4px #fff,
       0 0 11px #fff,
-      0 0 19px #fff,
+      0 0 19px #3499b2,
       0 0 40px rgb(15, 44, 141),
       0 0 80px #0fa,
       0 0 90px #0fa,
@@ -63,4 +63,37 @@ h1, h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+    background-image: url(https://i.pinimg.com/originals/3b/17/5f/3b175f22c8e4756cee1925712bcc6e22.jpg);
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 100pt;
+
+    text-align: center;
+
+    user-select: none;
+    color: #a4a3a5;
+    
 }
